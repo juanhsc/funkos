@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 html{
-    background-color: aliceblue;
+    background-color: rgb(144, 183, 218);
 }
 .titulo{
     color: #000000;
@@ -23,14 +23,14 @@ html{
 }
 
 .card{
-    max-width: 250px;
+    max-width: 300px;
     position: relative;
     padding: 15px 10px;
     margin: 0 auto;
     margin-bottom: 50px;
     border-radius: 5px;
     background: #326789;
-    box-shadow: 2px 2px 5px rgb(233, 1, 1);
+    box-shadow: 5px 5px 5px rgb(17, 0, 78);
 }
 
 .imgProducto{
@@ -55,15 +55,28 @@ p{
    justify-content: center;
    background-color: #326789;
    font-size: 150%;
-   color: white;
+   color: rgb(255, 255, 255);
 }
 
 .nombre{
-    color: white;
-    font-size: 120%;
+    color: rgb(3, 0, 17);
+    font-size: 150%;
+    
+
     
 }
 .btn-container{
     display: flex;
     justify-content: center;
+}
+.btnAgregar{
+    border-radius: 4px;
+    width: 8rem;
+    background-color: #e4e2ee;
+    
+}
+.precio{
+    font-size: 2rem;
+    color: #000000;
+    
 }

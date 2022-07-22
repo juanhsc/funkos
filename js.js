@@ -27,10 +27,10 @@ async function desplegarProductos() {
                 <img class='imgProducto' src=${img} alt=""/>
             </div>
             <div>
-                <p>$${precio.toLocaleString()}</p>
+                <p class="precio">$${precio.toLocaleString()}</p>
             </div>
             <div class="btn-container">
-                <button id=${id} class='btnAgregar'>AGRGEGAR AL CARRITO</button>
+                <button id=${id} class='btnAgregar'>AGRGEGAR</button>
             </div>
         </div>`
     const container = document.getElementById('container')
