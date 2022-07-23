@@ -52,7 +52,8 @@ function agregarAlCarrito(e) { //la e es de evento
   const id = btn.getAttribute('id');
   const prodEncontrado = productos.find((item) => item.id == id)
   const enCarrito = carrito.find((prod) => prod.id == prodEncontrado.id)
-  console.log(enCarrito);
+  console.log(enCarrito);//muestra en el log
+
   if (!enCarrito) {
     carrito.push({ ...prodEncontrado, cantidad: 1 })
   } else {
@@ -62,10 +63,13 @@ function agregarAlCarrito(e) { //la e es de evento
       { ...enCarrito, cantidad: enCarrito.cantidad + 1 },
     ]
   }
-  console.log(carrito)
+  console.log(carrito)//muestra en el log
+
   localStorage.setItem('carrito', JSON.stringify(carrito))
   // contador.innerHTML = carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
   
 }
 // const contador = document.getElementById('cartCounter')
 // contador.innerHTML = carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
+
+
