@@ -66,10 +66,10 @@ function agregarAlCarrito(e) { //la e es de evento
   console.log(carrito)//muestra en el log
 
   localStorage.setItem('carrito', JSON.stringify(carrito))
-  // contador.innerHTML = carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
+  contador.innerHTML = carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
   
 }
-// const contador = document.getElementById('cartCounter')
-// contador.innerHTML = carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
+const contador = document.getElementById('cartCounter')
+ contador.innerHTML = carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
 
 

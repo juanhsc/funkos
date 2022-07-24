@@ -50,11 +50,11 @@ p{
 
 .title{
    display: flex;
-   height: 50px;
+   height: 80px;
    padding-top: 1rem;
    justify-content: center;
    background-color: #326789;
-   font-size: 150%;
+   font-size: 50px;
    color: rgb(255, 255, 255);
 }
 
@@ -79,4 +79,14 @@ p{
     font-size: 2rem;
     color: #000000;
     
+}
+
+.lista{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    margin-right: 10px;
+}
+nav{
+    height: 190%;
 }
