@@ -30,7 +30,7 @@ async function desplegarProductos() {
                 <p class="precio">$${precio.toLocaleString()}</p>
             </div>
             <div class="btn-container">
-                <button id=${id} class='btnAgregar'>AGRGEGAR</button>
+                <button id=${id} class='btnAgregar'>AGRGEGAR AL CARRITO</button>
             </div>
         </div>`
     const container = document.getElementById('container')
@@ -66,10 +66,57 @@ function agregarAlCarrito(e) { //la e es de evento
   console.log(carrito)//muestra en el log
 
   localStorage.setItem('carrito', JSON.stringify(carrito))
-  contador.innerHTML = carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
+  //contador.innerHTML = carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
   
 }
-const contador = document.getElementById('cartCounter')
- contador.innerHTML = carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
+//const contador = document.getElementById('cartCounter')
+ //contador.innerHTML = carrito.reduce((acc, prod) => acc + prod.cantidad, 0)
 
 
+
+
+
+
+
+
+
+//agregando al carrito
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+//pone en cero el carro al apretar "comprar"
+
+function botonComprarClicked() {
+  shoppingCartItemsContainer.innerHTML = '';
+  updateShoppingCartTotal();
+}
+
+//
+
+
+
+
+ const btn2 = document.querySelector('#comprar')
+ 
+ 
+ btn2.addEventListener('click', () => {
+   Swal.fire({
+     title: 'Genial!',
+     text: 'Gracias por su compra',
+     icon: 'success',
+     confirmButtonText: 'Cool'
+     
+ })
+ })
+ 
